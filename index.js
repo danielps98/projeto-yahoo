@@ -3,15 +3,15 @@ const app = express();
 
 
 //estou dizendo para o express usar o ejs como view engine
-app.set('view emgime', 'ejs');
+app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
 
-    res.send("bem vindo ao meu site")
+    res.render("index")
 
 });
 
 
-app.listen(8000, ()=> {
-console.log("app rodando na porta 8000");    
+app.listen(8081, ()=> {
+console.log("app rodando na porta 8081");    
 });
